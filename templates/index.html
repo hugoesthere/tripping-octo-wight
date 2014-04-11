@@ -3,7 +3,20 @@
 {% block title %}5C Course Reviews{% endblock %}
 
 {% block content %}
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=618710408222385";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div class="jumbotron">
+
+  <div class="fb-like" data-href="http://creativename.herokuapp.com/" data-width="100" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+  
   <h2>Welcome to 5C Course Reviews!</h2>
   <p>You can read tons of reviews written about any course at the 5Cs. Search courses by major or school, and write your own reviews, too!</p>
 </div>
@@ -35,3 +48,7 @@
     $('.chosen-select').chosen();
 </script>
 {% endblock %}
+
+
+
+
